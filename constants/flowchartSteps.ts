@@ -10,6 +10,9 @@ export type FlowChartStep = {
   }[]
 }
 
+
+
+
 export const flowchartSteps: FlowChartStep[] = [
   {
     name: "Sensitization Session",

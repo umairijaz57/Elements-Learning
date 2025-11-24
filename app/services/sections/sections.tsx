@@ -1,10 +1,14 @@
+import { ECEContent } from "./ECESection/ECEContent"
 import { LanguageContent } from "./LanguageSection/LanguageContent"
 import { AssessmentsContent } from "./MathSection/AssessmentsContent"
 import { MathsLabsContent } from "./MathSection/MathsLabsContent"
 import { MathsManipulativesContent } from "./MathSection/MathsManipulativesContent"
 import { PublicationsContent } from "./MathSection/Publications/PublicationsContent"
 import { TrainingsContent } from "./MathSection/Training/TrainingsContent"
+import Publication from "./ScienceSection/Publications/Publication"
 import { ScienceContent } from "./ScienceSection/ScienceContent"
+import ScienceLab from "./ScienceSection/ScienceLab/ScienceLab"
+import Training from "./ScienceSection/Trainings/Training"
 
 export type Tab = {
   name: string
@@ -61,7 +65,6 @@ export const sections: Section[] =
         name: "Assessments",
         src: "/whatweofferpage/maths/assessments.png",
         tabName: "assessments",
-        disabled: true,
         content: <AssessmentsContent />
       },
     ],
@@ -71,7 +74,41 @@ export const sections: Section[] =
     serviceName: "science",
     color: "#55088C50",
     src: "/landingpage/science.png",
-    content: <ScienceContent />
+    content:<ScienceContent />,
+    tabs:[{
+        name: "Publications",
+        src: "/whatweofferpage/maths/publication.png",
+        tabName: "publications",
+        content: <Publication />
+      },
+      {
+        name: "Trainings",
+        src: "/whatweofferpage/maths/trainings.png",
+        tabName: "trainings",
+        content: <Training /> 
+      },
+      {
+        name: "Science Lab",
+        src: "/whatweofferpage/maths/maths-labs.png",
+        tabName: "labs",
+        content: <ScienceLab />
+      },
+      {
+        name: "Manipulatives",
+        src: "/whatweofferpage/maths/manipulative.png",
+        tabName: "manipulatives",
+        disabled: true,
+        content: <MathsManipulativesContent />
+      },
+      {
+        name: "Assessments",
+        src: "/whatweofferpage/maths/assessments.png",
+        tabName: "assessments",
+        disabled: false,
+        content: <AssessmentsContent section={"Science"} />
+      },
+    ],
+    // content: <ScienceContent />
   },
   {
     name: "Language",
@@ -80,13 +117,13 @@ export const sections: Section[] =
     src: "/landingpage/language.png",
     content: <LanguageContent />
   },
-  // {
-  //   name: "Early Childhood Education",
-  //   serviceName: "ece",
-  //   color: "#DA037F50",
-  //   src: "/landingpage/ece.png",
-  //   content: <ECEContent />
-  // },
+  {
+    name: "Early Childhood Education",
+    serviceName: "ece",
+    color: "#DA037F50",
+    src: "/landingpage/ece.png",
+    content: <ECEContent />
+  },
   // {
   //   name: "STEAM",
   //   serviceName: "steam",

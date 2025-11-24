@@ -17,7 +17,7 @@ export const TrainingsContent = () => {
           <FlowChart />
         </section>
         <div className="flex flex-col gap-4 text-base md:text-lg xl:text-xl p-4 xs:p-8 sm:p-12 lg:p-16 xl:p-20 xl:px-32">
-          <p>Through extensive face-to-face trainings with esteemed organizations and schools, such as APS, Froebel's International Schools, Silver Oaks School System, FDE, FGE, NCLS, and many more to come, we ensure that teachers receive immersive learning experiences, preparing them to excel in the ever-evolving landscape of education.</p>
+          <p>Through extensive face-to-face trainings with esteemed organizations and schools, such as APS, Froebel&apos;s International Schools, Silver Oaks School System, FDE, FGE, NCLS, and many more to come, we ensure that teachers receive immersive learning experiences, preparing them to excel in the ever-evolving landscape of education.</p>
         </div>
         <section className="p-4 sm:p-8 lg:p-12 bg-[#F3EEE8]">
           <MultiCarousel items={TrainingEvents} />

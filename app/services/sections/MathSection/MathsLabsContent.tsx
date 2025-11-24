@@ -43,19 +43,19 @@ export const MathsLabsContent = () => {
                 <SlidingDiv direction={"left"} className="sm:flex-[2_0_0] aspect-[3/4] bg-blue-950">
                   <CarouselSingle containerClass={"size-full"} items={[
                         <div key={`mathLabCover-1`} className="p-3">
-                          <img src="/MathLabCover/1.jpg" className="size-full shadow-lg shadow-slate-400" />
+                          <img src="/MathLabCover/1.jpg" alt="" className="size-full shadow-lg shadow-slate-400" />
                         </div>,
                         <div key={`mathLabCover-2`} className="p-3">
-                          <img src="/MathLabCover/2.jpg" className="size-full shadow-lg shadow-slate-400" />
+                          <img src="/MathLabCover/2.jpg" alt="" className="size-full shadow-lg shadow-slate-400" />
                         </div>,
                         <div key={`mathLabCover-3`} className="p-3">
-                          <img src="/MathLabCover/3.jpg" className="size-full shadow-lg shadow-slate-400" />
+                          <img src="/MathLabCover/3.jpg" alt="" className="size-full shadow-lg shadow-slate-400" />
                         </div>,
                         <div key={`mathLabCover-4`} className="p-3">
-                          <img src="/MathLabCover/4.jpg" className="size-full shadow-lg shadow-slate-400" />
+                          <img src="/MathLabCover/4.jpg" alt="" className="size-full shadow-lg shadow-slate-400" />
                         </div>,
                         <div key={`mathLabCover-5`} className="p-3">
-                          <img src="/MathLabCover/5.jpg" className="size-full shadow-lg shadow-slate-400" />
+                          <img src="/MathLabCover/5.jpg" alt="" className="size-full shadow-lg shadow-slate-400" />
                         </div>,
                     ]}
                     nextButton={

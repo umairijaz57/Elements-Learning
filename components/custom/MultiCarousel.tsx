@@ -133,7 +133,7 @@ export const MultiCarousel: React.FC<MultiCarouselProps> = ({items, autoScroll=t
                 </div>
                 <div className="flex justify-between gap-2 h-1/5 w-full">
                   {item.gallery.map(src => 
-                    <img key={src} src={src} className="" />
+                    <img key={src} src={src} alt="" className="" />
                   )}
                 </div>
               </div>}

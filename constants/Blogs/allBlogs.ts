@@ -1,5 +1,6 @@
 import { Blog, BulletType, HeaderType, ImageType, ParagraphType } from "./blog";
 import { dinosaurExtinction } from "./dinosaurExtinction";
+import { reggioEmilia } from "./reggioEmilia";
 import { sciencePopularizers } from "./sciencePopularizers";
 
 export const defaultBlog: Blog = {
@@ -48,6 +49,7 @@ export const defaultImage: ImageType = {
 
 export const allBlogs: Blog[] = [
   dinosaurExtinction,
-  sciencePopularizers
+  sciencePopularizers,
+  reggioEmilia
   // solarSystem,
 ]

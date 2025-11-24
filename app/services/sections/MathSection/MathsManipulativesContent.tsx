@@ -99,11 +99,11 @@ export const MathsManipulativesContent = () => {
               <div className="flex flex-col sm:flex-row gap-2">
               <SlidingDiv direction={"left"} className="sm:flex-[2_0_0] aspect-square bg-neutral-400">
                 <CarouselSingle onIndexChange={(i) => setIndex(i)} containerClass={"size-full"} delay={6000} items={[
-                      <img key={`mathManipulative-1`} src="/MathManipulative/1.jpg" className="size-full" />, 
-                      <img key={`mathManipulative-2`} src="/MathManipulative/2.jpg" className="size-full" />, 
-                      <img key={`mathManipulative-3`} src="/MathManipulative/3.jpg" className="size-full" />, 
-                      <img key={`mathManipulative-4`} src="/MathManipulative/4.jpg" className="size-full" />, 
-                      <img key={`mathManipulative-5`} src="/MathManipulative/5.jpg" className="size-full" />,
+                      <img alt="" key={`mathManipulative-1`} src="/MathManipulative/1.jpg" className="size-full" />, 
+                      <img alt="" key={`mathManipulative-2`} src="/MathManipulative/2.jpg" className="size-full" />, 
+                      <img alt="" key={`mathManipulative-3`} src="/MathManipulative/3.jpg" className="size-full" />, 
+                      <img alt="" key={`mathManipulative-4`} src="/MathManipulative/4.jpg" className="size-full" />, 
+                      <img alt="" key={`mathManipulative-5`} src="/MathManipulative/5.jpg" className="size-full" />,
                   ]}
                   nextButton={
                     <div className="size-10 lg:size-16 pr-2 xs:pr-0">
@@ -130,7 +130,7 @@ export const MathsManipulativesContent = () => {
               </div>
               <Marquee pauseOnClick>
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <img key={`activityBooklet-${i}`} src={src[index][i]} className="size-40 sm:size-48 md:size-52 lg:size-64 mx-4"/>
+                  <img alt="" key={`activityBooklet-${i}`} src={src[index][i]} className="size-40 sm:size-48 md:size-52 lg:size-64 mx-4"/>
                 ))}
               </Marquee>        
             </div>

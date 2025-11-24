@@ -36,13 +36,13 @@ export const services: Service[] = [
     content: " Making science engaging and hands-on with 'Science Tamasha,' encouraging active participation and curiosity through experiments and interactive learning.",
     illustrationSrc: "/landingpage/science.png",
     videoSrc: "/animations/science.mp4",
-    link: "/services/science",
+    link: "/services/science/publications",
     linkText: "Learn more",
     color: "#55088C50"
   },
   {
     title: "Early Childhood Education (ECE) and Parenting",
-    disabled: true,
+    disabled: false,
     content: " Supporting children's growth through targeted Early Childhood Education (ECE) and parenting strategies, ensuring a nurturing environment from preschool to young adulthood.",
     illustrationSrc: "/landingpage/ece.png",
     videoSrc: "/animations/ece.mp4",

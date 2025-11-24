@@ -4,6 +4,7 @@ import { HexagonPlayButton } from "./HexagonPlayButton"
 
 type CustomAccordionProps = {
   containerClass: string
+  color?: any
   items: ({
     id: string
     disabled?: boolean
@@ -14,7 +15,13 @@ type CustomAccordionProps = {
   type?: "single" | "multiple"
 }
 
-export const CustomAccordion: React.FC<CustomAccordionProps> = ({containerClass, items, type="single", changeHeaders=false}) => {
+export const CustomAccordion: React.FC<CustomAccordionProps> = ({
+  containerClass, 
+  items, 
+  type="single", 
+  changeHeaders=false, 
+  color="#FDBA41"
+}) => {
 
   const [opened, setOpened] = useState<any>("")
 
@@ -22,7 +29,17 @@ export const CustomAccordion: React.FC<CustomAccordionProps> = ({containerClass,
     <Accordion onValueChange={(value: string | string[]) => setOpened(value)} className={containerClass} type={type} collapsible>
       {items.map(item => 
         <AccordionItem key={item.id} value={item.id}>
-          <AccordionTrigger disabled={item.disabled} className={`p-1 rounded-full hover:no-underline rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${item.id !== opened && changeHeaders ? "bg-transparent delay-0 duration-0" : item.disabled === true ? "bg-gray-300 text-gray-600" : "bg-[#FBBA41] duration-200"}`}>
+          <AccordionTrigger 
+            disabled={item.disabled} 
+            style={{
+              backgroundColor: item.id !== opened && changeHeaders 
+                ? "transparent" 
+                : item.disabled 
+                  ? "#d1d5db" 
+                  : color
+            }}
+            className={`p-1 rounded-full hover:no-underline rounded-br-none font-bold text-xs xs:text-base sm:text-xl md:text-2xl lg:text-xl flex items-center gap-2 group transition-colors ${item.id !== opened && changeHeaders ? "delay-0 duration-0" : item.disabled === true ? "text-gray-600" : "duration-200"}`}
+          >
             <div className="size-6 xs:size-8 sm:size-12 xl:size-16 relative">
               {!(item.id === opened || (opened instanceof Array && opened.filter(id => item.id === id).length !== 0)) ? 
               <>
